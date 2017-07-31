@@ -1,0 +1,2 @@
+mkdir checkpoints
+python scripts/download_utilities.py 0B3A3gL1SjnBMdmczem9jVXFoOW8 checkpoints/ctrlfnet_iiit_iter_10000.t7
