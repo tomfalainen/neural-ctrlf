@@ -24,7 +24,7 @@ from skimage import draw
 
 import misc.dataset_loader as dl
 from misc.embeddings import dct
-from misc.utils import nms_detections, pad_proposals
+from misc.utils import nms_detections
 
 def filter_region_proposals(region_proposals, H0, W0, image_size):
     """
@@ -106,7 +106,6 @@ def draw_boxes_onto_image(img, ab, colors=(1, 0, 0), lw=3):
         
         #If outside image, don't draw
         if b[0] < 0 or b[1] < 0 or b[2] >= w or b[3] >= h:
-#            continue
             if b[3] >= h:
                 b[3] = h - 1
             if b[2] >= w:
@@ -158,10 +157,8 @@ def main(args):
 
     region_proposals_orig = dl.generate_region_proposals(args.image)
     region_proposals = filter_region_proposals(region_proposals_orig, H0, W0, image_size)
-    region_proposals = pad_proposals(region_proposals, (H0, W0))
     region_proposals = np.round((region_proposals -1) * down_scale + 1).astype(np.int32)
 
-#    ret = extract_features(args.model, img, region_proposals)
     ret = extract_features(args, img, region_proposals)
     rpn_boxes_final, rpn_embeddings, rpn_logprobs, dtp_embeddings, dtp_logprobs = ret
         
@@ -223,7 +220,6 @@ if __name__ == '__main__':
     help='The trained Ctrl-F-Net model to use')
     parser.add_argument('--image',
     default='examples/test_image.png',
-#    default='data/washington/gw_20p_wannot/3050305.tif',
     help='The image to test on')
     parser.add_argument('--out',
     default='examples/out.png',
