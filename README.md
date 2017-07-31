@@ -1,4 +1,4 @@
-#Neural Ctrl-F: Segmentation-free Query-by-String Word Spotting in Handwritten Manuscript Collections
+# Neural Ctrl-F: Segmentation-free Query-by-String Word Spotting in Handwritten Manuscript Collections
 
 ![ctrlfnet](ctrlfnet.png)
 
