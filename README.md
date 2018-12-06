@@ -6,9 +6,9 @@ This repository contains a minimal implementation of the paper
 
 **[Neural Ctrl-F: Segmentation-free Query-by-String Word Spotting in Handwritten Manuscript Collections](https://arxiv.org/abs/1703.07645)**,
 <br>
-[Tomas Wilkinson]((http://user.it.uu.se/~tomwi522/)\,
-[Jonas Lindström]\,
-[Anders Brun]
+[Tomas Wilkinson](http://user.it.uu.se/~tomwi522/),
+Jonas Lindström,
+Anders Brun
 <br>
 
 The paper addresses the problem of **Segmentation-free Word Spotting in Historical Manuscripts**, where a computer detects words on a collection of manuscript pages and allows a user to search within them. The model, dubbed Ctrl-F-Net after the word search keyboard short cut in common document processors, is a deep convolutional neural network trained in an end-to-end fashion.
