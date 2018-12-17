@@ -22,11 +22,13 @@ We provide:
 If you find this code useful in your research, please cite:
 
 ```
-@article{wilkinson2017neural,
-  title={Neural Ctrl-F: Segmentation-free Query-by-String Word Spotting in Handwritten Manuscript Collections},
+@inproceedings{wilkinson2017neural,
+  title={Neural Ctrl-F: segmentation-free query-by-string word spotting in handwritten manuscript collections},
   author={Wilkinson, Tomas and Lindstr{\"o}m, Jonas and Brun, Anders},
-  journal={arXiv preprint arXiv:1703.07645},
-  year={2017}
+  booktitle={Computer Vision (ICCV), 2017 IEEE International Conference on},
+  pages={4443--4452},
+  year={2017},
+  organization={IEEE}
 }
 
 ```
