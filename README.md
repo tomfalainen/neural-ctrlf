@@ -68,13 +68,9 @@ luarocks install cudnn
 
 ## Pretrained model
 
-You can download a pretrained Ctrl-F-Net model by running the following script:
+You can download a pretrained Ctrl-F-Net model by following [this](https://uppsala.box.com/s/jqiel4pr63u7eq9bfmcnqutiztkpy61c) link and downloading the models
 
-```bash
- sh scripts/download_model.sh
- ```
- 
- This will download the model (about 1 GB) to `models/ctrlfnet_washington.t7`
+Save the models in the `models` folder
 
 ## Running on a new image
 
